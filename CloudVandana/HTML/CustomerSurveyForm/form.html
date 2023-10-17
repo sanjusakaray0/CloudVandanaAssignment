@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Survey Form</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+    <h1><center><u>Customer Survey Form</u></center></h1>
+    <div class="container bg-white">
+        <form action="#" name="myForm" onsubmit="return validateForm()" method="post">
+            <table >
+                <tr>
+                    <td><label for="firstname">First Name<span>*</span></label></td>
+                    <td colspan="3"><input type="text" id="firstname" name="firstname" required /></td>
+                </tr>
+                <tr>
+                    <td><label for="lastname">Last Name<span>*</span></label></td>
+                    <td colspan="3"><input type="text" id="lastname" name="lastname" required /></td>
+                </tr>
+                <tr>
+                    <td><label for="dob">Date of Birth<span>*</span></label></td>
+                    <td colspan="3"><input type="date" id="dob" name="dob" required /></td>
+                </tr>
+                <tr>
+                    <td><label for="country">Country<span>*</span></label></td>
+                    <td colspan="3">
+                        <select name="country" id="country" required>
+                            <option value="" selected hidden>Select your country</option>
+                            <option value="Andaman and Nicobar">Andaman and Nicobar</option>
+                            <option value="America">America</option>
+                            <option value="Canada">Canada</option>
+                            <option value="China">China</option>
+                            <option value="France">France</option>
+                            <option value="Germany">Germany</option>
+                            <option value="India">India</option>
+                            <option value="Japan">Japan</option>
+                            <option value="Russia">Russia</option>
+                            <option value="Spain">Spain</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender<span>*</span></label></td>
+                    <td class="radio">
+                        <input type="radio" id="gender" name="gender" id="male" value="Male" required />
+                        <label for="male">Male</label>
+                    </td>
+                    <td class="radio">
+                        <input type="radio" id="gender" name="gender" id="female" value="Female" required /> 
+                        <label for="female">Female</label>
+                    </td>
+                    <td class="radio">
+                        <input type="radio" id="gender" name="gender" id="others" value="Others" required /> 
+                        <label for="others">Others</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="profession">Profession<span>*</span></label></td>
+                    <td colspan="3"><input type="text" id="profession" name="profession" required /></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email<span>*</span></label></td>
+                    <td colspan="3"><input type="email" id="email" name="email" required /></td>
+                </tr>
+                <tr>
+                    <td><label for="phonenumber">Phone number<span>*</span></label></td>
+                    <td colspan="3"><input type="number" id="phonenumber" name="phonenumber" required /></td>
+                </tr>
+                <tr>
+                    <td>
+                        <center><input type="submit" class="button" id = "button"/></center>
+                    </td>
+                    <td colspan="3">
+                        <center><input type="reset" class="button" id="button"/></center>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

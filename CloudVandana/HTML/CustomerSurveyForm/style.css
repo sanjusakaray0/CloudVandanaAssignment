@@ -1,0 +1,61 @@
+html {
+    background-color: rgba(0, 0, 255, 0.75);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 490px;
+    height: 540px;
+    box-shadow: 10px 10px 25px blue;
+}
+
+h1 {
+    color: yellow;
+}
+
+table {
+    width: 480px;
+    height: 540px;
+}
+td {
+    padding: 10px;
+}
+
+.button {
+    width: 100px;
+    background-color: blue;
+    color: white;
+    padding-inline: 20px;
+    padding-block: 10px;
+    border: 0px;
+    border-radius: 10px;
+}
+
+input {
+    width: 95%;
+    padding-right: 10px;
+}
+
+select{
+    width: 100%;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.radio input {
+    width: 20%;
+}
+
+span {
+    color: red;
+}
+
+#button:hover {
+    color: white;
+    background-color: darkblue;
+}
